@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Portafolio - Sebastian Londoño Medina</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <canvas id="particles-canvas"></canvas>
+
+    <nav>
+      <div class="logo">Sebastian Londoño</div>
+      <div class="nav-links">
+        <a href="#about">Sobre Mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Habilidades</a> 
+        <a href="#certs">Certificaciones</a>
+        <a href="#contact">Contacto</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>
+        Ingeniero de Sistemas <br />
+        & <span style="color: var(--accent-color)">Fullstack Dev.</span>
+      </h1>
+      <p>
+        Construyo soluciones robustas en el backend con interfaces que enamoran
+        en el frontend.
+      </p>
+      <a href="#projects" class="btn">Ver mi trabajo</a>
+    </section>
+
+    <section id="about">
+      <h2>Sobre Mí</h2>
+      <p style="max-width: 800px; font-size: 1.2rem">
+        Hola, soy Sebastian Londoño Medina.<br><br>
+        
+        Soy un apasionado por la tecnología que vive en la intersección
+        entre la lógica estructural de la ingeniería y la creatividad del
+        desarrollo de software. Me enfoco en crear código limpio, escalable y, sobre todo,
+        funcional. Siempre estoy aprendiendo algo nuevo, desde maneras de innovar con nuevas tecnologías a ideas de desarrollo agiles.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Proyectos Destacados</h2>
+      <div class="grid">
+        <div class="card project-card">
+          <div class="project-image">
+            <img
+              src="img/FEGCON.png"
+              alt="Imagen FEGCON"
+            />
+          </div>
+          <div class="project-content">
+            <h3>FEGCON: Fondo de Empleados del Grupo Constructor del Tolima</h3>
+            <p>
+              Interfaces interactivas y corporativas para el Fondo de Empleados FEGCON, gestionando sus asociados y beneficiaros con una estructura de datos robusta.
+            </p>
+            <div class="project-footer">
+              <a
+                href="https://fegcon.com.co"
+                target="_blank"
+                class="btn-project"
+                >Ver Proyecto <span>→</span></a
+              >
+            </div>
+          </div>
+        </div>
+
+           <div class="card project-card">
+          <div class="project-image">
+            <img
+              src="img/empanadas.png"
+              alt="Imagen FEGCON"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Empanadas La Abuela</h3>
+            <p>
+              Pagina web con fines de crecimiento digital para empanaderia local con diseño para uso de restaurantes.
+            </p>
+            <div class="project-footer">
+              <a
+                href="https://loigon12.github.io/Empanadas-La-Abuela/"
+                target="_blank"
+                class="btn-project"
+                >Ver Proyecto <span>→</span></a
+              >
+            </div>
+          </div>
+           </div>
+        <div class="card project-card">
+          <div class="project-image">
+            <img
+              src="img/apuesta.png"
+              alt="App Mobile"
+            />
+          </div>
+
+         
+
+          <div class="project-content">
+            <h3>Apuesta Deportiva</h3>
+            <p>
+              Pagina de apuesta deportiva con integración de seguimiento de resultados en tiempo real.
+            </p>
+            <div class="project-footer">
+              <a
+                href="https://loigon12.github.io/ApuestaFamiliar/"
+                target="_blank"
+                class="btn-project"
+                >Ver Proyecto <span>→</span></a
+              >
+            </div>
+          </div>
+        </div>
+
+ <div class="card project-card">
+          <div class="project-image">
+            <img
+              src="img/snake.png"
+              alt="App Mobile"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Juego: SNAKE</h3>
+            <p>
+              Desarrollo de la logica del famoso juego Snake hecho por mi.
+            </p>
+            <div class="project-footer">
+              <a
+                href="https://loigon12.github.io/Snake-web/"
+                target="_blank"
+                class="btn-project"
+                >Ver Proyecto <span>→</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card project-card">
+          <div class="project-image">
+            <img
+              src="img/newyears.png"
+              alt="Plataforma newyears"
+            />
+          </div>
+          <div class="project-content">
+            <h3>newyears</h3>
+            <p>
+              Landing page promocional para la campaña de Artista "newyears" con su estetica única y autentica.
+            </p>
+            <div class="project-footer">
+              <a
+                href="https://loigon12.github.io/newyears/"
+                target="_blank"
+                class="btn-project"
+                >Ver Proyecto <span>→</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills">
+    <h2>Stack Tecnológico</h2>
+    <div class="tech-container">
+        
+        <div class="tech-category">
+            <h3><i class="fas fa-code"></i> Frontend</h3>
+            <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">SEO Optimization</span>
+                <span class="tech-tag">Vite</span>
+            </div>
+        </div>
+
+        <div class="tech-category">
+            <h3><i class="fas fa-server"></i> Backend & DB</h3>
+            <div class="tech-tags">
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Oracle DB</span>
+                <span class="tech-tag">MySQL (phpMyAdmin)</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">REST APIs</span>
+            </div>
+        </div>
+
+        <div class="tech-category">
+            <h3><i class="fas fa-tools"></i> Herramientas & Dev</h3>
+            <div class="tech-tags">
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">GitHub</span>
+                <span class="tech-tag">Postman</span>
+                <span class="tech-tag">VS Code</span>
+                <span class="tech-tag">IntelliJ IDEA</span>
+                <span class="tech-tag">FileZilla</span>
+                <span class="tech-tag">Trello / Jira</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="languages">
+    <h2>Lenguajes de Programación</h2>
+    <div class="lang-grid">
+        <div class="lang-card" style="--lang-color: #3776ab;">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+            <p>Automatización, Ciencia de Datos y Backend.</p>
+        </div>
+
+        <div class="lang-card" style="--lang-color: #777bb4;">
+            <i class="fab fa-php"></i>
+            <h3>PHP</h3>
+            <p>Desarrollo web dinámico y gestión de servidores.</p>
+        </div>
+
+        <div class="lang-card" style="--lang-color: #f89820;">
+            <i class="fab fa-java"></i>
+            <h3>Java</h3>
+            <p>Aplicaciones robustas, POO y lógica empresarial.</p>
+        </div>
+
+        <div class="lang-card" style="--lang-color: #f7df1e;">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>Interactividad total y ecosistema Fullstack en desarrollo web.</p>
+        </div>
+
+        <div class="lang-card" style="--lang-color: #00599c;">
+            <div class="cplus-icon">C++</div>
+            <h3>C++</h3>
+            <p>Sistemas de alto rendimiento y algoritmos complejos.</p>
+        </div>
+    </div>
+</section>
+
+   <section id="certs">
+    <h2>Certificaciones & Logros</h2>
+    <div class="grid">
+        <div class="card cert-card">
+            <div class="cert-image-wrapper">
+                <img src="img/certificaciones/1757821728494.jpg" alt="Diploma Arquitectura en la Nube" class="zoomable-image">
+                <div class="zoom-icon"></div>
+            </div>
+            <div class="cert-content">
+                <h3>Arquitectura en la Nube</h3>
+                <p>Validación de Arquitecto en la Nube en Nivel Explorador con una duración de 164 horas.</p>
+                <small style="color: var(--accent-color);">Emitido: 27 de Agosto del 2025</small>
+            </div>
+        </div>
+
+        <div class="card cert-card">
+            <div class="cert-image-wrapper">
+                <img src="img/certificaciones/javascript.png" alt="Diploma Javascript" class="zoomable-image">
+                <div class="zoom-icon"></div>
+            </div>
+            <div class="cert-content">
+                <h3>Programación con Javascript</h3>
+                <p>Certificación de programación con Javascript por Coursera.</p>
+                <small style="color: var(--accent-color);">Emitido: 27 de febrero del 2025</small>
+            </div>
+        </div>
+
+          <div class="card cert-card">
+            <div class="cert-image-wrapper">
+                <img src="img/certificaciones/javascript.png" alt="Diploma Javascript" class="zoomable-image">
+                <div class="zoom-icon"></div>
+            </div>
+            <div class="cert-content">
+                <h3>Conceptos basicos de React</h3>
+                <p>Certificación de aprendizaje del Framework React por Coursera.</p>
+                <small style="color: var(--accent-color);">Emitido: 6 de Marzo del 2025</small>
+            </div>
+        </div>
+
+        <div class="card cert-card">
+            <div class="cert-image-wrapper">
+                <img src="img/certificaciones/desarrollo de software.png" alt="Certificado Comfatolima" class="zoomable-image">
+                <div class="zoom-icon"></div>
+            </div>
+            <div class="cert-content">
+                <h3>Tecnico Laboral en Desarrollo de software</h3>
+                <p>Certificación fundamental en Desarrollo de software por la Caja de Compensación Familiar Comfatolima, con una duración de 1680 horas.</p>
+                <small style="color: var(--accent-color);">Emitido: 21 de Diciembre del 2023</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="image-modal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img-in-modal">
+    <div id="caption"></div>
+</div>
+
+    <section id="contact">
+    <div class="contact-container">
+        <div class="contact-header">
+            <h2>¿Hablamos?</h2>
+            <p>Estoy listo para convertir tus ideas en código. ¡Envíame un mensaje!</p>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Tu Email" required>
+            </div>
+            <div class="input-group">
+                <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sebastian-londoño-medina-007707305/" target="_blank" class="social-icon" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Loigon12" target="_blank" class="social-icon" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/sebaslondono_/" target="_blank" class="social-icon" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/573144869287" target="_blank" class="social-icon" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <footer>
+      <p>© 2026 - Diseñado con código puro por Sebastian Londoño Medina</p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById("particles-canvas");
+      const ctx = canvas.getContext("2d");
+      let particles = [];
+
+      function init() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        particles = [];
+        for (let i = 0; i < 100; i++) {
+          particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            vx: (Math.random() - 0.5) * 0.5,
+            vy: (Math.random() - 0.5) * 0.5,
+            size: Math.random() * 2,
+          });
+        }
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "#00ffcc";
+
+        particles.forEach((p) => {
+          p.x += p.vx;
+          p.y += p.vy;
+
+          if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+          if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.fill();
+        });
+
+        requestAnimationFrame(animate);
+      }
+
+      window.addEventListener("resize", init);
+      init();
+      animate();
+
+      // Smooth Scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // --- Lógica del Modal de Certificaciones ---
+
+// 1. Seleccionar elementos del DOM
+const modal = document.getElementById('image-modal');
+const modalImg = document.getElementById('img-in-modal');
+const captionText = document.getElementById('caption');
+const closeBtn = document.getElementsByClassName('close-modal')[0];
+
+// Seleccionamos todas las imágenes que tienen la clase 'zoomable-image'
+const clickableImages = document.querySelectorAll('.zoomable-image');
+
+// 2. Función para abrir el modal
+function openModal(imgSource, altText) {
+    modal.classList.add('active'); // Usamos clases CSS para la transición
+    modalImg.src = imgSource;
+    captionText.innerHTML = altText; // Usa el texto 'alt' como descripción
+    // Deshabilitar el scroll del body mientras el modal está abierto
+    document.body.style.overflow = 'hidden';
+}
+
+// 3. Función para cerrar el modal
+function closeModal() {
+    modal.classList.remove('active');
+    // Reactivar el scroll del body
+    document.body.style.overflow = 'auto';
+}
+
+// 4. Asignar Event Listeners
+
+// A cada imagen pequeña le asignamos el evento click
+clickableImages.forEach(img => {
+    img.addEventListener('click', function() {
+        // 'this' se refiere a la imagen a la que se le hizo click
+        openModal(this.src, this.alt);
+    });
+});
+
+// Click en la 'X' para cerrar
+closeBtn.addEventListener('click', closeModal);
+
+// Click fuera de la imagen (en el fondo oscuro) también cierra el modal
+modal.addEventListener('click', function(e) {
+    if(e.target === modal) {
+        closeModal();
+    }
+});
+
+// Cerrar con la tecla Escape (UX Pro)
+document.addEventListener('keydown', function(e) {
+    if(e.key === "Escape" && modal.classList.contains('active')) {
+        closeModal();
+    }
+});
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que la página se recargue
+    
+    // Aquí podrías añadir la lógica para enviar el correo (con EmailJS o un backend)
+    
+    const btn = this.querySelector('.btn');
+    const originalText = btn.innerText;
+    
+    btn.innerText = '¡Enviado con éxito!';
+    btn.style.background = '#00ffcc';
+    btn.style.color = '#0a0a0a';
+    
+    this.reset(); // Limpia el formulario
+
+    setTimeout(() => {
+        btn.innerText = originalText;
+        btn.style.background = 'transparent';
+        btn.style.color = '#00ffcc';
+    }, 3000);
+});
+
+
+function toggleWaChat() {
+    const chatWindow = document.getElementById('wa-chat-window');
+    const isVisible = chatWindow.style.display === 'flex';
+    
+    chatWindow.style.display = isVisible ? 'none' : 'flex';
+    
+    // Actualizar la hora al abrir
+    if (!isVisible) {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        document.getElementById('current-time').innerText = `${hours}:${minutes}`;
+    }
+}
+
+    </script>
+
+    <div class="wa-widget">
+    <div class="wa-chat-window" id="wa-chat-window">
+        <div class="wa-chat-header">
+            <div class="wa-header-info">
+                <div class="wa-avatar">
+                    <img src="https://ui-avatars.com/api/?name=Tu+Nombre&background=00ffcc&color=0a0a0a" alt="Avatar">
+                    <span class="online-dot"></span>
+                </div>
+                <div>
+                    <p class="wa-name">Sebas</p>
+                    <p class="wa-status">En línea</p>
+                </div>
+            </div>
+            <button class="wa-close" onclick="toggleWaChat()">&times;</button>
+        </div>
+
+        <div class="wa-chat-body">
+            <div class="wa-message">
+                <p>¿Estás dispuesto a que trabajemos juntos?</p>
+                <span class="wa-time" id="current-time"></span>
+            </div>
+            
+            <div class="wa-sticker-container">
+                <img src="images.jpg" alt="Monkey Sticker" class="wa-sticker">
+            </div>
+        </div>
+
+        <div class="wa-chat-footer">
+            <a href="https://wa.me/573144869287" target="_blank" class="wa-send-btn">
+                Ir a WhatsApp <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+
+    <button class="wa-float-btn" onclick="toggleWaChat()" title="¡Hablemos!">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+</div>
+  </body>
+</html>
