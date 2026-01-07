@@ -15,6 +15,23 @@
     </style>
   </head>
   <body>
+    <div id="loader">
+    <div class="loader-content">
+        <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">system_initialize.sh</span>
+        </div>
+        <div class="terminal-body">
+            <div class="code-line"><span class="prompt">></span> <span class="type-text" id="status-text">Iniciando módulos...</span></div>
+            <div class="progress-container">
+                <div class="progress-bar" id="bar"></div>
+            </div>
+            <div class="percentage" id="percent">0%</div>
+        </div>
+    </div>
+</div>
     <canvas id="particles-canvas"></canvas>
 
     <nav>
@@ -31,7 +48,7 @@
     <section class="hero">
       <h1>
         Ingeniero de Sistemas <br />
-        & <span style="color: var(--accent-color)">Fullstack Dev.</span>
+        & <span style="color: var(--accent-color)">Fullstack Developer.</span>
       </h1>
       <p>
         Construyo soluciones robustas en el backend con interfaces que enamoran
@@ -500,6 +517,50 @@ function toggleWaChat() {
     }
 }
 
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    const bar = document.getElementById('bar');
+    const percent = document.getElementById('percent');
+    const statusText = document.getElementById('status-text');
+    
+    const messages = [
+        "Cargando dependencias...",
+        "Compilando componentes React...",
+        "Conectando con base de datos...",
+        "Optimizando assets...",
+        "Sistema listo."
+    ];
+    
+    let width = 0;
+    let msgIndex = 0;
+
+    const interval = setInterval(() => {
+        if (width >= 100) {
+            clearInterval(interval);
+            setTimeout(() => {
+                loader.classList.add('loaded'); // Desvanece el loader
+                document.body.style.overflow = 'auto'; // Habilita el scroll
+            }, 500);
+        } else {
+            // Incrementar progreso de forma irregular para que parezca real
+            width += Math.floor(Math.random() * 10) + 1;
+            if (width > 100) width = 100;
+            
+            bar.style.width = width + '%';
+            percent.innerText = width + '%';
+            
+            // Cambiar mensajes según el progreso
+            if (width > 20 && msgIndex === 0) msgIndex = 1;
+            if (width > 40 && msgIndex === 1) msgIndex = 2;
+            if (width > 70 && msgIndex === 2) msgIndex = 3;
+            if (width > 90 && msgIndex === 3) msgIndex = 4;
+            statusText.innerText = messages[msgIndex];
+        }
+    }, 150);
+});
+
+// Bloquear scroll mientras carga
+document.body.style.overflow = 'hidden';
     </script>
 
     <div class="wa-widget">

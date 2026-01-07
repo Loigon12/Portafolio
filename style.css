@@ -694,3 +694,77 @@
 }
 
 .wa-send-btn:hover { background: #128c7e; }
+
+/* --- Estilos del Loader --- */
+#loader {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Por encima de todo */
+    transition: opacity 0.8s ease, visibility 0.8s;
+}
+
+.loader-content {
+    width: 90%;
+    max-width: 400px;
+    background: #161616;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 204, 0.3);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.terminal-header {
+    background: #252525;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+.terminal-title { color: #888; font-size: 12px; margin-left: 10px; font-family: monospace; }
+
+.terminal-body {
+    padding: 25px;
+    font-family: 'Courier New', monospace;
+}
+
+.code-line { color: var(--accent-color); font-size: 0.9rem; margin-bottom: 15px; }
+.prompt { color: #fff; margin-right: 10px; }
+
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: var(--accent-color);
+    box-shadow: 0 0 15px var(--accent-color);
+    transition: width 0.1s ease;
+}
+
+.percentage {
+    text-align: right;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+}
+
+/* Clase para ocultar el loader */
+#loader.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
