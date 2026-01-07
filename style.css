@@ -100,54 +100,106 @@
         margin-top: 1rem;
       }
 
-      /* --- ESTILOS DE CAPACIDADES --- */
 .capabilities-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    max-width: 1000px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 4rem auto;
 }
 
 .cap-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(0, 255, 204, 0.1);
-    padding: 2rem 1.5rem;
-    border-radius: 12px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.03); /* Vidrio oscuro */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem 1.5rem;
     text-align: center;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.4s ease;
+    overflow: hidden;
 }
 
-.cap-card i {
-    font-size: 2rem;
-    color: var(--accent-color);
-    margin-bottom: 1.2rem;
-    display: block;
+/* Efecto de borde brillante al pasar el mouse */
+.cap-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at top right, rgba(0, 255, 204, 0.15), transparent);
+    opacity: 0;
+    transition: opacity 0.4s;
 }
+
+.cap-card:hover {
+    transform: translateY(-12px);
+    border-color: var(--accent-color);
+    box-shadow: 0 15px 40px rgba(0, 255, 204, 0.15);
+}
+
+.cap-card:hover::before { opacity: 1; }
+
+/* Contenedor del Icono con Brillo */
+.cap-icon-wrapper {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cap-icon-wrapper i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    z-index: 2;
+    transition: transform 0.4s;
+}
+
+.cap-glow {
+    position: absolute;
+    width: 100%; height: 100%;
+    background: var(--accent-color);
+    filter: blur(25px);
+    opacity: 0.2;
+    border-radius: 50%;
+    transition: opacity 0.4s;
+}
+
+.cap-card:hover .cap-glow { opacity: 0.5; }
+.cap-card:hover i { transform: scale(1.1); }
 
 .cap-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.8rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
     color: #fff;
+    letter-spacing: 1px;
 }
 
 .cap-card p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: var(--text-dim);
-    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
 }
 
-/* Efecto Hover */
-.cap-card:hover {
-    background: rgba(0, 255, 204, 0.05);
-    border-color: var(--accent-color);
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 255, 204, 0.1);
+/* Micro-etiquetas de tecnologías */
+.cap-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-.cap-card:hover i {
-    transform: scale(1.2);
-    text-shadow: 0 0 15px var(--accent-color);
+.cap-tags span {
+    background: rgba(0, 255, 204, 0.1);
+    color: var(--accent-color);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 255, 204, 0.2);
 }
 
       /* Tarjetas de Proyectos y Certificaciones */
