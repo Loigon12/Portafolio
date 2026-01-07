@@ -100,6 +100,56 @@
         margin-top: 1rem;
       }
 
+      /* --- ESTILOS DE CAPACIDADES --- */
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cap-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 255, 204, 0.1);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cap-card i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1.2rem;
+    display: block;
+}
+
+.cap-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: #fff;
+}
+
+.cap-card p {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    line-height: 1.4;
+}
+
+/* Efecto Hover */
+.cap-card:hover {
+    background: rgba(0, 255, 204, 0.05);
+    border-color: var(--accent-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 255, 204, 0.1);
+}
+
+.cap-card:hover i {
+    transform: scale(1.2);
+    text-shadow: 0 0 15px var(--accent-color);
+}
+
       /* Tarjetas de Proyectos y Certificaciones */
       .grid {
         display: grid;
