@@ -611,12 +611,13 @@
     width: 100%;
     cursor: pointer;
     font-weight: 700;
+    background-color: #0a0a0a;
+}
+.contact-form .btn:hover {
+    background-color: var(--accent-color);
     color: var(--bg-color);
 }
 
-.contact-form .btn:hover {
-    color: white;
-}
 
 /* --- Redes Sociales --- */
 .social-links {
