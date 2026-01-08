@@ -870,3 +870,75 @@
     opacity: 0;
     visibility: hidden;
 }
+/* --- AJUSTES RESPONSIVOS GLOBALES --- */
+
+@media (max-width: 992px) {
+    section { padding: 80px 5%; } /* Menos espacio a los lados en tablets */
+    .hero h1 { font-size: 2.8rem; }
+}
+
+@media (max-width: 768px) {
+    /* Navegación Móvil Simplificada */
+    nav { padding: 1rem 5%; }
+    .nav-links { gap: 1rem; }
+    .nav-links a { display: none; } /* Ocultamos links de texto */
+    .nav-links a:last-of-type { display: block; } /* Dejamos solo contacto si quieres */
+    #lang-toggle { padding: 8px 15px; font-size: 14px; }
+
+    /* Hero */
+    .hero { padding-top: 60px; text-align: center; }
+    .hero h1 { font-size: 2.2rem; line-height: 1.2; }
+    .hero p { font-size: 1rem; padding: 0 10px; }
+    .hero-btns { flex-direction: column; width: 100%; max-width: 300px; }
+    .btn { width: 100%; text-align: center; }
+
+    /* Loader "Quantum" en Móvil */
+    .core-wrapper { width: 180px; height: 180px; }
+    #core-percent { font-size: 1.8rem; }
+    .boot-terminal { 
+        position: relative; right: 0; top: 20px; 
+        width: 280px; height: 120px; border-left: none;
+        border-top: 1px solid rgba(0, 255, 204, 0.3);
+        padding: 10px 0;
+    }
+
+    /* Grillas (Proyectos, Capacidades, Lenguajes) */
+    .grid, .capabilities-grid, .lang-grid {
+        grid-template-columns: 1fr; /* Todo a una sola columna */
+        gap: 1.5rem;
+    }
+
+    .tech-container { grid-template-columns: 1fr; }
+
+    /* Certificaciones */
+    .cert-image-wrapper { height: 220px; }
+
+    /* Contacto */
+    .contact-form { width: 100%; }
+    
+    /* WhatsApp */
+    .wa-chat-window {
+        width: 280px;
+        bottom: 90px;
+        right: -10px; /* Ajuste para que no se salga de la pantalla */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 { font-size: 1.8rem; }
+    h2 { font-size: 2rem; margin-bottom: 2rem; }
+    
+    /* Ajuste de tarjetas para pantallas muy pequeñas */
+    .cap-card, .card {
+        padding: 1.2rem;
+    }
+    
+    .logo { font-size: 1.1rem; }
+}
+
+/* Evitar scroll horizontal accidental */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
