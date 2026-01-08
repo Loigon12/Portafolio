@@ -323,7 +323,7 @@
 .tech-category h3 {
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
-    color: var(--text-main);
+    color: white;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -345,9 +345,9 @@
     padding: 8px 16px;
     border-radius: 50px;
     font-size: 0.85rem;
-    color: var(--text-dim);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: default;
+    color: white;
 }
 
 .tech-tag:hover {
@@ -611,6 +611,11 @@
     width: 100%;
     cursor: pointer;
     font-weight: 700;
+    color: var(--bg-color);
+}
+
+.contact-form .btn:hover {
+    color: white;
 }
 
 /* --- Redes Sociales --- */
